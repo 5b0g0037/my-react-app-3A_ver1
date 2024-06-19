@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import MyDisplay from "./MyDisplay";
 import MyButton from "./MyButton";
-import "./MyCalculator.css";
+import "./calculator.css";
 
 function MyCalculator() {
   const [result, setResult] = useState("0");
-  // handleClick是MyButton的事件處理常式
-  const handleClick = (value) => {
+  const handleclick = (value) => {
     // alert(value);
     switch (value) {
       case "0":
@@ -48,8 +47,8 @@ function MyCalculator() {
   };
   return (
     <div className="calculator">
-      <MyDisplay result = {result} />
-      <MyButton buttonClicked={handleClick} />
+      <MyDisplay result={result} />
+      <MyButton buttonClicked={handleclick} />
     </div>
   );
 }
