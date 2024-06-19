@@ -1,20 +1,16 @@
-import "./App.css";
-import MyRGBPanel from "./components/rgb-panel/MyRGBPanel"
-import MySlider from "./components/rgb-panel/MySlider";
-import MyCalculator from "./components/calculator/MyCalculator";
-import TicTacToe from "./components/tic-tac-toe/TicTacToe";
+import './App.css';
+import MySlider from './MySlider';
 
 function App() {
   return (
     <div className="App">
-      <h1>MySlider</h1>
-      <MySlider />
-      <h1>MyRGBPanel</h1>
-      <MyRGBPanel />
-      <h1>MyCalculator</h1>
-      <MyCalculator />
-      <h1>Tic-Tac-Toe Game</h1>
-      <TicTacToe />
+      <header className="App-header">
+        <h1>Hello React! 2024.5.2</h1>
+        <h2>React第一個元件</h2>
+        <MySlider color="RED"/>
+        <MySlider color="GREEN"/>
+        <MySlider color="BLUE"/>
+      </header>
     </div>
   );
 }
